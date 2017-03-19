@@ -3,7 +3,8 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/d-amaya/spring-cloud-app
+          uri: https://github.com/d-amaya/spring-cloud-app.git
+          searchPaths: ConfigData
           
 server:
   port: 8001
