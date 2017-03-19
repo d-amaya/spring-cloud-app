@@ -1,0 +1,9 @@
+.metadata/
+.recommenders/
+Microservices-With-Spring-Student-Files/
+RemoteSystemsTempFiles/
+
+*/.gradle/
+*/.settings/
+*/bin/
+*/build/
