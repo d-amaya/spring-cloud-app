@@ -7,3 +7,5 @@ RemoteSystemsTempFiles/
 */.settings/
 */bin/
 */build/
+*/.classpath
+*/.project
