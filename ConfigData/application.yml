@@ -1,3 +1,22 @@
+---
+spring:
+  profiles: dev
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8010/eureka
+
+---
+spring:
+  profiles: lab
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8010/eureka
+      
+---
+spring:
+  profiles: pdn
 eureka:
   client:
     serviceUrl:
