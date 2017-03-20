@@ -1,3 +1,8 @@
 spring:
   application:
     name: noun-sentence-composer
+  profiles:
+    active: dev
+  cloud:
+    config:
+      uri: http://localhost:8001

@@ -1,6 +1,6 @@
 spring:
   application:
-    name: verb-sentence-composer
+    name: full-sentence-composer
   profiles:
     active: dev
   cloud:
