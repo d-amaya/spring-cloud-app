@@ -1,0 +1,9 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8010/eureka/
+      
+subjects: I-you-He-She-It
+
+server:
+  port: ${PORT:${SERVER_PORT:0}}
