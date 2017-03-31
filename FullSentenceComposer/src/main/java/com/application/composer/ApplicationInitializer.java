@@ -2,14 +2,10 @@ package com.application.composer;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
-import org.springframework.cloud.netflix.ribbon.RibbonClient;
-
-import com.application.composer.config.RibbonConfig;
+import org.springframework.cloud.netflix.feign.EnableFeignClients;
 
 @SpringBootApplication
-@EnableDiscoveryClient
-@RibbonClient(name = "ribbonClient", configuration = RibbonConfig.class)
+@EnableFeignClients
 public class ApplicationInitializer {
 
 	public static void main(String[] args) {

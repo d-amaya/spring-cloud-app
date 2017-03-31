@@ -5,6 +5,7 @@ import java.net.URI;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.cloud.client.loadbalancer.LoadBalancerClient;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
@@ -13,12 +14,13 @@ import org.springframework.web.client.RestTemplate;
 import com.application.composer.util.Constants;
 
 @RestController
-public class SentenceComposerController {
+@RequestMapping(value = "/ribbon")
+public class SentenceComposerRibbonController {
 
 	@Autowired
 	private LoadBalancerClient loadBalancerClient;
 
-	@RequestMapping("/sentence")
+	@GetMapping(value = "/sentence")
 	public @ResponseBody String getSentence() {
 		return getWord(Constants.SUBJECT_SERVICE_NAME) 
 				+ " " + getWord(Constants.VERB_SERVICE_NAME) 
