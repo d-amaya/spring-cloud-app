@@ -2,6 +2,8 @@ package com.application.composer.util;
 
 public class Constants {
 
+	public static final String EMPTY_SPACE_SEPARATOR = " ";
+	
 	public static final String SUBJECT_SERVICE_NAME = "subject-sentence-composer";
 	public static final String VERB_SERVICE_NAME = "verb-sentence-composer";
 	public static final String ARTICLE_SERVICE_NAME = "article-sentence-composer";

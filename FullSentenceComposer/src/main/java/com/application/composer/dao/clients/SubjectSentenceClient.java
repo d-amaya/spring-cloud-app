@@ -1,4 +1,4 @@
-package com.application.composer.dao;
+package com.application.composer.dao.clients;
 
 import org.springframework.cloud.netflix.feign.FeignClient;
 import org.springframework.http.MediaType;
