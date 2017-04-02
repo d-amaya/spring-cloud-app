@@ -7,9 +7,9 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.application.composer.util.Constants;
 
-@FeignClient(name = Constants.SUBJECT_SERVICE_NAME)
+@FeignClient(name = Constants.SUBJECT_SERVICE_NAME, path = "/api")
 public interface SubjectSentenceClient {
 
-	@RequestMapping(method = RequestMethod.GET, value = "/", produces = MediaType.APPLICATION_JSON_VALUE)
+	@RequestMapping(method = RequestMethod.GET, value = "/subject", produces = MediaType.APPLICATION_JSON_VALUE)
 	public String getSubject();
 }

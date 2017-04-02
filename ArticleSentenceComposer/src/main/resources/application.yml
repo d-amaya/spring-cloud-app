@@ -1,2 +1,3 @@
 server:
+  contextPath: /api
   port: ${PORT:${SERVER_PORT:0}}
