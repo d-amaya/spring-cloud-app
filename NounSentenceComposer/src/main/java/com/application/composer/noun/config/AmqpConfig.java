@@ -13,7 +13,6 @@ public class AmqpConfig {
 		CachingConnectionFactory connectionFactory = new CachingConnectionFactory("192.168.99.100");
 		connectionFactory.setUsername("rabbit");
 		connectionFactory.setPassword("rabbit");
-		connectionFactory.setVirtualHost("microservices.vh");
 		return connectionFactory;
 	}
 }

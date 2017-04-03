@@ -1,12 +1,14 @@
 package com.application.composer.article.controller;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
+@RefreshScope
 @RestController
 @ConfigurationProperties(prefix = "properties")
 public class ArticleComposerController {
