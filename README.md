@@ -23,7 +23,7 @@ application 3 times with different profiles: to do so we need to execute the fol
   3. Run a docker container with RabbitMQ so that the server config and the clients applications are able to upgrade the beans when            updating properties. To do so, execute the next command:
         
         docker run -d --hostname rabbitmq --name rabbitmq -p 15672:15672 -p 5672:5672 -v /home/docker/volumes/rabbitmq:/var/lib/rabbitmq 
-        -e RABBITMQ_DEFAULT_USER=rabbit -e RABBITMQ_DEFAULT_PASS=rabbit -e RABBITMQ_DEFAULT_VHOST=microservices.vh rabbitmq:3-management
+        -e RABBITMQ_DEFAULT_USER=rabbit -e RABBITMQ_DEFAULT_PASS=rabbit rabbitmq:3-management
         
      IMPORTANT: Take into account thar you probably need to change the ip address of your Virtual Machine
                 where your docker container is running in every AmqpConfig.java files.
